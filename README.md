@@ -4,6 +4,6 @@ Projeto Ionic com template tabs.
 
 
 
-![](https://via.placeholder.com/300)
-![](https://via.placeholder.com/300)
-![](https://via.placeholder.com/300)
+![](https://ibb.co/k22c1pRF)
+![](https://ibb.co/DdZS0f4)
+![](https://ibb.co/9mwhJHk9)
