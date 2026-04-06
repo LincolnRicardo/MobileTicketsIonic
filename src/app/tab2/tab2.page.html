@@ -1,13 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Fila de Senhas</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-button expand="full" (click)="senhasService.chamarSenha()">
+  CHAMAR SENHA
+</ion-button>
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let s of senhasService.senhas">
-      {{ s }}
-    </ion-item>
-  </ion-list>
-</ion-content>
+<ion-list>
+  <ion-item *ngFor="let s of senhasService.painel">
+    Senha: {{ s.senha }} | Guichê: {{ s.guiche }}
+  </ion-item>
+</ion-list>

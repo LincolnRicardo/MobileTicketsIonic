@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SenhasService } from '../servic  es/senhas.service';
+import { SenhasService } from '../services/senhas.service';
 
 @Component({
   selector: 'app-tab1',
@@ -9,13 +9,10 @@ import { SenhasService } from '../servic  es/senhas.service';
 })
 export class Tab1Page {
 
-  constructor(private senhasService: SenhasService) {}
+  constructor(public senhasService: SenhasService) {}
 
-  gerarSenha(tipo: string) {
-    const numero = Math.floor(Math.random() * 1000);
-    const senha = tipo + numero;
-    this.senhasService.adicionarSenha(senha);
+  gerarSenha(tipo: 'SP' | 'SG' | 'SE') {
+    this.senhasService.gerarSenha(tipo);
   }
 
 }
-
